@@ -2,12 +2,24 @@ var c = document.getElementById('bCanvas');
 var ctx = c.getContext('2d');
 ctx.font = "bold 12px sans-serif";
 
-// Black button
+// White button
 ctx.beginPath();
 ctx.fillText('White Button',50,10);
 ctx.arc(85,25,10,0,2*Math.PI);
 ctx.stroke();
+ctx.moveTo(40,50);
+
+// Joystick
+ctx.beginPath();
+ctx.fillText('Joystick',40,55);
+ctx.arc(65,75,8,0,2*Math.PI);
+ctx.stroke();
+ctx.moveTo(70,75);
+ctx.beginPath();
+ctx.arc(65,75,15,0,2*Math.PI);
+ctx.stroke();
 ctx.moveTo(96,115);
+
 // All letter buttons
 ctx.fillStyle="#0000FF";
 ctx.beginPath();
